@@ -7,7 +7,7 @@
 `ubuntu-theme` has been inspired by the default terminal colors in Ubuntu.
 It looks like this:
 
-![screenshot](screensot.png)
+![screenshot](https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot.png)
 
 
 ## Installation ##
