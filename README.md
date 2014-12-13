@@ -22,9 +22,8 @@ to the dierctory `~/.emacs.d/themes` and add this line to your `.emacs` file:
 
 ### Package.el ###
 
-Ubuntu theme is available in [MELPA](http://melpa.org).
-
-You can install `ubuntu-theme` with:
+Ubuntu theme is available in [MELPA](http://melpa.org). You can install it
+with:
 
 `M-x package-install ubuntu-theme`
 
