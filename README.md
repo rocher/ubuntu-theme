@@ -31,7 +31,10 @@ with:
 
 ## Load ##
 
-To load `ubuntu-theme` automatically on Emacs startup, add this to your init
+You can change themes using `M-x customize-themes`, which allows you
+to save preferences between restarts.
+
+Alternatively, to just load `ubuntu-theme` automatically on Emacs startup, add this to your init
 file:
 
 ```lisp
