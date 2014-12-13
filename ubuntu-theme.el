@@ -1,4 +1,4 @@
-;;; ubuntu-theme.el --- A color theme for Emacs.
+;;; ubuntu-theme.el --- A theme inspired by the default terminal colors in Ubuntu
 
 ;; Copyright (C) 2014 Francesc Rocher
 
