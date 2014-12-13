@@ -2,10 +2,12 @@
 [![issues](http://img.shields.io/github/issues/rocher/ubuntu-theme.svg?style=flat)](https://github.com/rocher/ubuntu-theme/issues)
 [![Gratipay](http://img.shields.io/gratipay/rocher.svg?style=flat)](https://www.gratipay.com/rocher/)
 
-
 ## About ##
 
 `ubuntu-theme` has been inspired by the default terminal colors in Ubuntu.
+It looks like this:
+
+![screenshot](screensot.png)
 
 
 ## Installation ##
