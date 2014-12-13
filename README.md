@@ -1,6 +1,6 @@
 [![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
-![issues](http://img.shields.io/github/issues/rocher/ubuntu-theme.svg)
-[![Gratipay](http://img.shields.io/gratipay/rocher.svg)](https://www.gratipay.com/rocher/)
+[![issues](http://img.shields.io/github/issues/rocher/ubuntu-theme.svg?style=flat)](https://github.com/rocher/ubuntu-theme/issues)
+[![Gratipay](http://img.shields.io/gratipay/rocher.svg?style=flat)](https://www.gratipay.com/rocher/)
 
 
 ## About ##
