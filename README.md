@@ -12,8 +12,9 @@
 
 ### Manual ###
 
-Download `ubuntu-theme.el` to the dierctory `~/.emacs.d/themes` and add this
-line to your `.emacs` file:
+Download
+[ubuntu-theme.el](https://raw.githubusercontent.com/rocher/ubuntu-theme/master/ubuntu-theme.el)
+to the dierctory `~/.emacs.d/themes` and add this line to your `.emacs` file:
 
 ```lisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
