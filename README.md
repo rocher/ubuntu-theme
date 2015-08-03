@@ -9,6 +9,8 @@ It looks like this:
 
 ![screenshot](https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot.png)
 
+It has improved faces for modes like `info`, `helm` and `org`, among others.
+
 
 ## Installation ##
 
