@@ -1,7 +1,6 @@
 [![License GPL 3](http://img.shields.io/badge/license-GPL3-red.svg)](http://www.gnu.org/licenses/gpl-3.0.txt)
 [![MELPA Stable](http://stable.melpa.org/packages/ubuntu-theme-badge.svg)](http://stable.melpa.org/#/ubuntu-theme)
 [![issues](http://img.shields.io/github/issues/rocher/ubuntu-theme.svg)](https://github.com/rocher/ubuntu-theme/issues)
-[![Gratipay](http://img.shields.io/gratipay/rocher.svg)](https://www.gratipay.com/rocher/)
 
 ## About ##
 
