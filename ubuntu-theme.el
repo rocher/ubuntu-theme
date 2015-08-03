@@ -4,7 +4,7 @@
 
 ;; Author: Francesc Rocher <francesc.rocher@gmail.com>
 ;; URL: http://github.com/rocher/ubuntu-theme
-;; Version: 0.3
+;; Version: 0.4
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -73,6 +73,43 @@
  '(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
  '(git-gutter+-unchanged ((t (:background "yellow" :foreground "black"))))
  '(header-line ((t (:box nil :foreground "grey90" :background "grey20" :inherit (mode-line)))))
+ '(helm-M-x-key ((t (:foreground "coral" :underline t))))
+ '(helm-action ((t (:underline t))))
+ '(helm-buffer-directory ((t (:foreground "dodger blue" :weight bold))))
+ '(helm-buffer-file ((t (:inherit font-lock-builtin-face))))
+ '(helm-buffer-not-saved ((t (:foreground "Indianred2"))))
+ '(helm-buffer-process ((t (:foreground "Sienna2"))))
+ '(helm-buffer-saved-out ((t (:background "black" :foreground "red"))))
+ '(helm-buffer-size ((t (:foreground "RosyBrown"))))
+ '(helm-candidate-number ((t (:foreground "gold1"))))
+ '(helm-etags-file ((t (:foreground "Lightgoldenrod2" :underline t))))
+ '(helm-ff-directory ((t (:foreground "dodger blue" :weight bold))))
+ '(helm-ff-dotted-directory ((t (:foreground "dodger blue" :weight bold))))
+ '(helm-ff-executable ((t (:foreground "green2"))))
+ '(helm-ff-file ((t (:inherit default))))
+ '(helm-ff-invalid-symlink ((t (:background "black" :foreground "red" :weight bold))))
+ '(helm-ff-prefix ((t (:background "gold" :foreground "black" :weight bold))))
+ '(helm-ff-symlink ((t (:foreground "cyan2" :weight bold))))
+ '(helm-grep-cmd-line ((t (:foreground "green3"))))
+ '(helm-grep-file ((t (:foreground "medium purple" :underline t))))
+ '(helm-grep-finish ((t (:foreground "Green1"))))
+ '(helm-grep-lineno ((t (:foreground "Darkorange1"))))
+ '(helm-grep-match ((t (:foreground "gold1"))))
+ '(helm-grep-running ((t (:foreground "Red1" :weight bold))))
+ '(helm-header ((t (:inherit header-line :weight normal :height 1.2 :family "Ubuntu Condensed"))))
+ '(helm-header-line-left-margin ((t (:background "gold" :foreground "black"))))
+ '(helm-history-deleted ((t (:inherit helm-ff-invalid-symlink))))
+ '(helm-history-remote ((t (:foreground "indianred1"))))
+ '(helm-lisp-completion-info ((t (:foreground "red"))))
+ '(helm-lisp-show-completion ((t (:background "dim gray"))))
+ '(helm-match ((t (:foreground "gold1"))))
+ '(helm-match-item ((t (:inherit isearch))))
+ '(helm-prefarg ((t (:foreground "green2"))))
+ '(helm-selection ((t (:background "#1a000e"))))
+ '(helm-selection-line ((t (:inherit highlight :distant-foreground "black"))))
+ '(helm-separator ((t (:foreground "red1"))))
+ '(helm-source-header ((t (:foreground "light pink" :underline t :weight normal :height 1.33 :family "Ubuntu Condensed"))))
+ '(helm-visible-mark ((t (:background "green3" :foreground "black"))))
  '(highlight ((t (:background "#441133"))))
  '(info-menu-header ((t (:foreground "bisque" :underline t :weight normal :height 1.2 :family "Ubuntu Condensed"))))
  '(info-title-1 ((t (:inherit info-title-2 :height 1.25))))
