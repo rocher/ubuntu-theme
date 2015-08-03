@@ -4,7 +4,7 @@
 
 ;; Author: Francesc Rocher <francesc.rocher@gmail.com>
 ;; URL: http://github.com/rocher/ubuntu-theme
-;; Version: 0.4b
+;; Version: 0.5
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -70,7 +70,7 @@
  '(font-lock-type-face ((t (:foreground "#7FFFD4"))))
  '(font-lock-variable-name-face ((t (:foreground "#ffffaa"))))
  '(font-lock-warning-face ((t (:inherit (error)))))
- '(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
+ '(fringe ((t (:background "#1a0013"))))
  '(git-gutter+-unchanged ((t (:background "yellow" :foreground "black"))))
  '(header-line ((t (:box nil :foreground "grey90" :background "grey20" :inherit (mode-line)))))
  '(helm-M-x-key ((t (:foreground "coral" :underline t))))
@@ -111,6 +111,10 @@
  '(helm-source-header ((t (:background "#300A24" :foreground "light pink" :underline t :weight normal :height 1.33 :family "Ubuntu Condensed"))))
  '(helm-visible-mark ((t (:background "green3" :foreground "black"))))
  '(highlight ((t (:background "#441133"))))
+ '(git-gutter+-added ((t (:background "#1a0013" :foreground "green2" :weight bold))))
+ '(git-gutter+-deleted ((t (:background "#1a0013" :foreground "red" :weight bold))))
+ '(git-gutter+-modified ((t (:background "#1a0013" :foreground "dark orange" :weight bold))))
+ '(hs-face ((t (:background "dark orange" :foreground "black"))))
  '(info-menu-header ((t (:foreground "bisque" :underline t :weight normal :height 1.2 :family "Ubuntu Condensed"))))
  '(info-title-1 ((t (:inherit info-title-2 :height 1.25))))
  '(info-title-2 ((t (:inherit info-title-3 :height 1.25))))
@@ -124,7 +128,7 @@
  '(lazy-highlight ((t (:background "khaki3" :foreground "black"))))
  '(link ((t (:underline (:color foreground-color :style line) :foreground "deep sky blue"))))
  '(link-visited ((t (:foreground "violet" :inherit (link)))))
- '(linum ((t (:background "#300a24" :foreground "light grey" :slant italic :height 0.85))))
+ '(linum ((t (:inherit shadow :foreground "gainsboro" :box (:line-width 1 :color "#300a24") :slant normal :height 0.85))))
  '(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
  '(minibuffer-prompt ((((background dark)) (:foreground "deep sky blue")) (((type pc)) (:foreground "magenta")) (t (:foreground "medium blue"))))
  '(mode-line ((t (:background "violetred4" :foreground "#FFFFf9" :box (:line-width 2 :color "violetred4")))))
