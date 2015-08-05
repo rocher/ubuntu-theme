@@ -4,7 +4,7 @@
 
 ;; Author: Francesc Rocher <francesc.rocher@gmail.com>
 ;; URL: http://github.com/rocher/ubuntu-theme
-;; Version: 0.5.1
+;; Version: 0.5.2
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -32,6 +32,17 @@
  'ubuntu
  '(button ((t (:inherit (link)))))
  '(cursor ((t (:background "white"))))
+ '(custom-button ((t (:background "bisque1" :foreground "black" :box (:line-width 2 :style released-button)))))
+ '(custom-button ((t (:background "bisque1" :foreground "black" :box (:line-width 2 :style released-button)))))
+ '(custom-button-mouse ((t (:background "cornsilk" :foreground "black" :box (:line-width 2 :style released-button)))))
+ '(custom-button-mouse ((t (:background "cornsilk" :foreground "black" :box (:line-width 2 :style released-button)))))
+ '(custom-button-pressed ((t (:background "bisque4" :foreground "black" :box (:line-width 2 :style pressed-button)))))
+ '(custom-button-pressed ((t (:background "bisque4" :foreground "black" :box (:line-width 2 :style pressed-button)))))
+ '(custom-documentation ((t (:inherit default))))
+ '(custom-group-subtitle ((t (:foreground "orange2" :underline t :weight normal :height 1.1 :family "Ubuntu Condensed"))))
+ '(custom-group-tag ((t (:inherit default :foreground "orange red" :height 1.6 :family "Ubuntu Condensed"))))
+ '(custom-variable-tag ((t (:foreground "orange1" :weight normal :height 1.2 :family "Ubuntu Condensed"))))
+ '(custom-visibility ((t (:inherit link :height 0.9))))
  '(default ((t (:inherit nil :stipple nil :background "#300a24" :foreground "#e0e0e0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :width normal :foundry "unknown" :family "Ubuntu Mono"))))
  '(diff-file-header ((t (:background "grey60" :foreground "black" :weight bold))))
  '(diff-refine-added ((t (:inherit diff-refine-change :background "#114411" :foreground "#11ff11"))))
@@ -54,6 +65,9 @@
  '(ediff-odd-diff-C ((t (:background "dim grey" :foreground "light grey"))))
  '(escape-glyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
  '(fixed-pitch ((t (:family "Ubuntu Mono"))))
+ '(flycheck-fringe-error ((t (:background "#600000" :foreground "#ff4444" :weight bold))))
+ '(flycheck-fringe-info ((t (:background "#006600" :foreground "green" :weight bold))))
+ '(flycheck-fringe-warning ((t (:background "saddle brown" :foreground "yellow2" :weight bold))))
  '(font-lock-builtin-face ((t (:foreground "#FF7FD4"))))
  '(font-lock-comment-delimiter-face ((t (:inherit (font-lock-comment-face)))))
  '(font-lock-comment-face ((t (:foreground "#a5a5a5" :slant italic))))
@@ -71,6 +85,9 @@
  '(font-lock-variable-name-face ((t (:foreground "#ffffaa"))))
  '(font-lock-warning-face ((t (:inherit (error)))))
  '(fringe ((t (:background "#1a0013"))))
+ '(git-gutter+-added ((t (:background "#1a0013" :foreground "green2" :weight bold))))
+ '(git-gutter+-deleted ((t (:background "#1a0013" :foreground "red" :weight bold))))
+ '(git-gutter+-modified ((t (:background "#1a0013" :foreground "dark orange" :weight bold))))
  '(git-gutter+-unchanged ((t (:background "yellow" :foreground "black"))))
  '(header-line ((t (:box nil :foreground "grey90" :background "grey20" :inherit (mode-line)))))
  '(helm-M-x-key ((t (:foreground "coral" :underline t))))
@@ -111,9 +128,6 @@
  '(helm-source-header ((t (:background "#300A24" :foreground "light pink" :underline t :weight normal :height 1.33 :family "Ubuntu Condensed"))))
  '(helm-visible-mark ((t (:background "green3" :foreground "black"))))
  '(highlight ((t (:background "#441133"))))
- '(git-gutter+-added ((t (:background "#1a0013" :foreground "green2" :weight bold))))
- '(git-gutter+-deleted ((t (:background "#1a0013" :foreground "red" :weight bold))))
- '(git-gutter+-modified ((t (:background "#1a0013" :foreground "dark orange" :weight bold))))
  '(hs-face ((t (:background "dark orange" :foreground "black"))))
  '(info-menu-header ((t (:foreground "bisque" :underline t :weight normal :height 1.2 :family "Ubuntu Condensed"))))
  '(info-title-1 ((t (:inherit info-title-2 :height 1.25))))
@@ -141,6 +155,8 @@
  '(region ((t (:foreground "#FFFFFF" :background "#1D68C4"))))
  '(secondary-selection ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "SkyBlue4")) (((class color) (min-colors 16) (background light)) (:background "yellow")) (((class color) (min-colors 16) (background dark)) (:background "SkyBlue4")) (((class color) (min-colors 8)) (:foreground "black" :background "cyan")) (t (:inverse-video t))))
  '(shadow ((((class color grayscale) (min-colors 88) (background light)) (:foreground "grey50")) (((class color grayscale) (min-colors 88) (background dark)) (:foreground "grey70")) (((class color) (min-colors 8) (background light)) (:foreground "green")) (((class color) (min-colors 8) (background dark)) (:foreground "yellow"))))
+ '(show-tabs-space ((t (:background "orange3"))))
+ '(show-tabs-tab ((t (:background "red3"))))
  '(term-color-blue ((t (:background "midnight blue" :foreground "dodger blue"))))
  '(term-color-cyan ((t (:background "cyan4" :foreground "cyan2"))))
  '(term-color-green ((t (:background "green4" :foreground "green2"))))
@@ -152,6 +168,37 @@
  '(variable-pitch ((t (:family "Ubuntu"))))
  )
 
+(when (macrop 'fringe-helper-define)
+    (fringe-helper-define 'git-gutter-fr+-added nil
+    "........"
+    "..X....."
+    "..XXX..."
+    "..XXXX.."
+    "..XXXX.."
+    "..XXX..."
+    "..X....."
+    "........")
+
+  (fringe-helper-define 'git-gutter-fr+-deleted nil
+    "........"
+    ".....X.."
+    "...XXX.."
+    "..XXXX.."
+    "..XXXX.."
+    "...XXX.."
+    ".....X.."
+    "........")
+
+  (fringe-helper-define 'git-gutter-fr+-modified nil
+    "........"
+    "..XXXX.."
+    "..XXXX.."
+    "..XXXX.."
+    "..XXXX.."
+    "..XXXX.."
+    "..XXXX.."
+    "........")
+  )
 
 ;;;###autoload
 (and load-file-name
