@@ -9,7 +9,7 @@ It looks like this:
 
 ![screenshot](https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot.png)
 
-It has improved faces for modes like `info`, `helm` and `org`, among others.
+It has improved faces for modes like `custom`, `info` and `helm`, among others.
 
 
 ## Installation ##
@@ -55,6 +55,8 @@ Please report any problems that you find on the
 you've added some improvements and you want them included upstream don't
 hesitate to send me a patch or even better - a GitHub pull
 request.
+
+![screenshot](https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot-git-gutter-helm.png)
 
 
 [![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/rocher/)
