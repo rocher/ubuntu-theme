@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ubuntu-theme by rocher</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ubuntu-theme</h1>
+        <p>Ubuntu color theme for Emacs 24</p>
+
+        <p class="view"><a href="https://github.com/rocher/ubuntu-theme">View the Project on GitHub <small>rocher/ubuntu-theme</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/rocher/ubuntu-theme/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rocher/ubuntu-theme/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rocher/ubuntu-theme">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><a href="http://www.gnu.org/licenses/gpl-3.0.txt"><img src="http://img.shields.io/badge/license-GPL3-red.svg" alt="License GPL 3"></a>
+<a href="http://stable.melpa.org/#/ubuntu-theme"><img src="http://stable.melpa.org/packages/ubuntu-theme-badge.svg" alt="MELPA Stable"></a>
+<a href="https://github.com/rocher/ubuntu-theme/issues"><img src="http://img.shields.io/github/issues/rocher/ubuntu-theme.svg" alt="issues"></a></p>
+
+<h2>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p><code>ubuntu-theme</code> has been inspired by the default terminal colors in Ubuntu.
+It looks like this:</p>
+
+<p><img src="https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot.png" alt="screenshot"></p>
+
+<p>It has improved faces for modes like <code>custom</code>, <code>info</code> and <code>helm</code>, among others.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="manual" class="anchor" href="#manual" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual</h3>
+
+<p>Download
+<a href="https://raw.githubusercontent.com/rocher/ubuntu-theme/master/ubuntu-theme.el">ubuntu-theme.el</a>
+to the dierctory <code>~/.emacs.d/themes</code> and add this line to your <code>.emacs</code> file:</p>
+
+<div class="highlight highlight-lisp"><pre>(add-to-list 'custom-theme-load-path <span class="pl-s"><span class="pl-pds">"</span>~/.emacs.d/themes/<span class="pl-pds">"</span></span>)</pre></div>
+
+<h3>
+<a id="packageel" class="anchor" href="#packageel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package.el</h3>
+
+<p>Ubuntu theme is available in <a href="http://melpa.org">MELPA</a>. You can install it
+with:</p>
+
+<p><code>M-x package-install ubuntu-theme</code></p>
+
+<h2>
+<a id="load" class="anchor" href="#load" aria-hidden="true"><span class="octicon octicon-link"></span></a>Load</h2>
+
+<p>You can change themes using <code>M-x customize-themes</code>, which allows you
+to save preferences between restarts.</p>
+
+<p>Alternatively, to just load <code>ubuntu-theme</code> automatically on Emacs startup, add this to your init
+file:</p>
+
+<div class="highlight highlight-lisp"><pre>(load-theme 'ubuntu <span class="pl-c1">t</span>)</pre></div>
+
+<p>You can load the theme manually with the interactive function <code>load-theme</code>:</p>
+
+<p><code>M-x load-theme RET ubuntu RET</code></p>
+
+<h1>
+<a id="bugs--improvements" class="anchor" href="#bugs--improvements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bugs &amp; Improvements</h1>
+
+<p>Please report any problems that you find on the
+<a href="https://github.com/rocher/ubuntu-theme/issues">project issue tracker</a>. If
+you've added some improvements and you want them included upstream don't
+hesitate to send me a patch or even better - a GitHub pull
+request.</p>
+
+<p><img src="https://raw.githubusercontent.com/rocher/ubuntu-theme/master/screenshot-git-gutter-helm.png" alt="screenshot"></p>
+
+<p><a href="https://gratipay.com/rocher/"><img src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" alt="Support via Gratipay"></a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/rocher">rocher</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
